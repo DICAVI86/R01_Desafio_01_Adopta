@@ -1,13 +1,12 @@
-import Badge from 'react-bootstrap/Badge';
-import Stack from 'react-bootstrap/Stack';
+import Button from 'react-bootstrap/Button';
 
 function Tag({tagColor, tagText}) {
   return (
-    <Stack direction="horizontal" gap={2}>
-      <Badge pill bg={tagColor}>
+    <div className="d-grid gap-2">
+      <Button variant={tagColor} size="lg">
         {tagText}
-      </Badge>
-    </Stack>
+      </Button>
+    </div>
   );
 }
 
